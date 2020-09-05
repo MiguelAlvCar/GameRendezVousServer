@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1062
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameWebSite", "GameWebSite\GameWebSite.csproj", "{277F0C2C-BF66-4CB4-BC7E-8E7A17F7B717}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_Models", "..\..\2 Spiel\Map-Window Save22\DTO_Models\DTO_Models.csproj", "{07D3288C-B789-4EED-BF17-31CED0D318A7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{277F0C2C-BF66-4CB4-BC7E-8E7A17F7B717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{277F0C2C-BF66-4CB4-BC7E-8E7A17F7B717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{277F0C2C-BF66-4CB4-BC7E-8E7A17F7B717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{277F0C2C-BF66-4CB4-BC7E-8E7A17F7B717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07D3288C-B789-4EED-BF17-31CED0D318A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07D3288C-B789-4EED-BF17-31CED0D318A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07D3288C-B789-4EED-BF17-31CED0D318A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07D3288C-B789-4EED-BF17-31CED0D318A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D823EB3E-53F2-43ED-B340-392369060C4D}
+	EndGlobalSection
+EndGlobal

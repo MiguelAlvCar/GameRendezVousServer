@@ -1,0 +1,13 @@
+﻿@using CommonModels
+@model GameUser
+@{ ViewBag.Title = "UserProps";}
+<div class="panel panel-primary">
+    <div class="panel-heading">
+        Custom User Properties
+    </div>
+    <table class="table table-striped">
+        <tr><th>Ability</th><td>@Model.Ability</td></tr>
+        <tr><th>CreationTime</th><td>@Model.CreationTime</td></tr>
+        <tr><th>ComputerID</th><td>@Model.ComputerID</td></tr>
+    </table>
+</div>
