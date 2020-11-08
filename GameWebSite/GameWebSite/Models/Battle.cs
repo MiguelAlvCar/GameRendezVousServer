@@ -9,7 +9,7 @@ namespace GameWebSite.Models
 {
     public class Battle
     {
-        public Battle(GameUser player1, GameUser player2, int army1, int army2, int points1, int points2, int width, int length, double result)
+        public Battle(GameUser player1, GameUser player2, int army1, int army2, int points1, int points2, double result)
         {
             Player1 = player1;
             Player2 = player2;
@@ -17,11 +17,8 @@ namespace GameWebSite.Models
             Army2 = army2;
             Points1 = points1;
             Points2 = points2;
-            Width = width;
-            Length = length;
             Result = result;
-            Player1.Ability = result;
-            Player2.Ability = result;
+            CreationTime = DateTime.Now;
         }
         
         public int BattleID { get; set; }

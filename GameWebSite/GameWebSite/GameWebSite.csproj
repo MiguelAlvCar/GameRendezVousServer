@@ -269,9 +269,10 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AdminController.cs" />
-    <Compile Include="Controllers\GameSupportController.cs" />
+    <Compile Include="Controllers\API\BattlesController.cs" />
+    <Compile Include="Controllers\API\GameSupportController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoggedUserController.cs" />
+    <Compile Include="Controllers\API\LoggedUserController.cs" />
     <Compile Include="Controllers\RoleAdminController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -284,8 +285,10 @@
     <Compile Include="Infrastructure\IdentityHelpers.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Battle.cs" />
+    <Compile Include="Models\DebugGamesPool.cs" />
     <Compile Include="Models\GameRole.cs" />
     <Compile Include="Models\GameUser.cs" />
+    <Compile Include="Models\PoolGame.cs" />
     <Compile Include="Models\UserViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

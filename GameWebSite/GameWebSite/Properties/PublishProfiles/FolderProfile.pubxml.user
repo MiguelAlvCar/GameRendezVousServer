@@ -10,13 +10,13 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/CommonModels.dll">
-      <publishTime>08/22/2020 09:40:46</publishTime>
+      <publishTime>11/08/2020 08:55:29</publishTime>
     </File>
     <File Include="bin/CommonModels.dll.config">
       <publishTime>08/21/2020 22:46:53</publishTime>
     </File>
     <File Include="bin/CommonModels.pdb">
-      <publishTime>08/22/2020 09:40:46</publishTime>
+      <publishTime>11/08/2020 08:55:29</publishTime>
     </File>
     <File Include="bin/de/System.Web.Helpers.resources.dll">
       <publishTime>11/28/2018 13:04:34</publishTime>
@@ -43,10 +43,10 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
       <publishTime>04/16/2020 20:38:56</publishTime>
     </File>
     <File Include="bin/GameWebSite.dll">
-      <publishTime>08/22/2020 09:40:48</publishTime>
+      <publishTime>11/08/2020 12:14:49</publishTime>
     </File>
     <File Include="bin/GameWebSite.pdb">
-      <publishTime>08/22/2020 09:40:48</publishTime>
+      <publishTime>11/08/2020 12:14:49</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>11/25/2019 10:57:50</publishTime>
@@ -616,13 +616,13 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
       <publishTime>07/16/2020 11:42:53</publishTime>
     </File>
     <File Include="Views/Admin/Create.cshtml">
-      <publishTime>07/05/2020 10:26:24</publishTime>
+      <publishTime>08/22/2020 13:52:00</publishTime>
     </File>
     <File Include="Views/Admin/Edit.cshtml">
-      <publishTime>06/18/2020 22:50:09</publishTime>
+      <publishTime>08/22/2020 13:52:00</publishTime>
     </File>
     <File Include="Views/Admin/Index.cshtml">
-      <publishTime>06/06/2020 20:07:44</publishTime>
+      <publishTime>08/22/2020 13:52:00</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
       <publishTime>06/21/2020 17:59:54</publishTime>
@@ -634,10 +634,10 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
       <publishTime>06/21/2020 11:03:41</publishTime>
     </File>
     <File Include="Views/RoleAdmin/Edit.cshtml">
-      <publishTime>06/21/2020 14:57:06</publishTime>
+      <publishTime>08/22/2020 13:52:00</publishTime>
     </File>
     <File Include="Views/RoleAdmin/Index.cshtml">
-      <publishTime>07/05/2020 10:25:44</publishTime>
+      <publishTime>08/22/2020 13:52:00</publishTime>
     </File>
     <File Include="Views/Shared/Error.cshtml">
       <publishTime>06/21/2020 15:03:09</publishTime>
@@ -652,7 +652,7 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
       <publishTime>06/06/2020 21:58:51</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>08/22/2020 09:40:49</publishTime>
+      <publishTime>11/07/2020 15:38:17</publishTime>
     </File>
   </ItemGroup>
 </Project>

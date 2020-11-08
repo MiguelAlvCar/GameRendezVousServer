@@ -21,7 +21,16 @@ namespace GameWebSite.Controllers
         [System.Web.Http.HttpPost]
         public async Task<LoginDTO> Login(LoginModel details)
         {
-            GameUser user = await UserManager.FindAsync(details.Name, details.Password);
+            GameUser user;
+            try
+            {
+                user = await UserManager.FindAsync(details.Name, details.Password);
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            
 
             if (user != null)
             {
@@ -36,6 +45,7 @@ namespace GameWebSite.Controllers
 
                 LoginDTO loginDTO = new LoginDTO(true);
                 PlayerDTO player = new PlayerDTO(user.UserName, user.Ability, user.Id.ToString()) { Email = user.Email};
+                player.GlobalIP = HttpContext.Current.Request.UserHostAddress;
 
                 using (AppIdentityDbContext context = new AppIdentityDbContext())
                 {
@@ -44,7 +54,7 @@ namespace GameWebSite.Controllers
                                     || (x.Player2.Id == user.Id && x.Result < 0)).Count();
                 }
 
-                loginDTO.GamesPool =  new GamesPoolController().GetOnlineGamesPool(null);
+                loginDTO.GamesPool =  new GamesPoolController().GetOnlineGamesPool(player.ID);
 
                 loginDTO.User = player;
                 return loginDTO;
