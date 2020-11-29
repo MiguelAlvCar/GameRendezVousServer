@@ -13,6 +13,9 @@ namespace GameWebSite.Infrastructure
     public class AppIdentityDbContext : IdentityDbContext<GameUser>
     {
         public DbSet<Battle> Battles { get; set; }
+        public DbSet<OnlineGameDTO> OnlineGames { get; set; }
+        public DbSet<PlayerDTO> Players { get; set; }
+        public DbSet<LocalIPDTO> LocalIP { get; set; }
         public AppIdentityDbContext() : base("IdentityDb") {}
 
         static AppIdentityDbContext()

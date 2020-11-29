@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -9,6 +10,7 @@ using System.Web.Http;
 using DTO_Models;
 using GameWebSite.Infrastructure;
 using GameWebSite.Models;
+using System.Web;
 
 namespace GameWebSite.Controllers
 {
@@ -17,20 +19,61 @@ namespace GameWebSite.Controllers
         [System.Web.Http.HttpGet]
         public IEnumerable<DebugGamesPool> GetPoolGames()
         {
-            return PoolGame.GamesPool.Select(x =>
+            using (AppIdentityDbContext context = new AppIdentityDbContext())
             {
-                string player2 = "";
-                if (x.Value.OnlineGame.Guest != null)
-                    player2 = x.Value.OnlineGame.Guest.Name;
-                return new DebugGamesPool() { GameID = x.Key, Player1 = x.Value.OnlineGame.Host.Name, Player2 = player2, IsThereATimer = x.Value.Timer != null };
-            });
+                var onlineGames = context.OnlineGames.Include(x => x.Guest).Include(x => x.Host).ToList();
+                List<DebugGamesPool> list = GamesPoolController.GamesPool.Select(x =>
+                {
+                    string player2 = "";
+
+                    OnlineGameDTO onlineGame;
+
+                    onlineGame = onlineGames.FirstOrDefault(y => y.ID == x.Key);
+
+                    if (onlineGame.Guest != null)
+                        player2 = onlineGame.Guest.Name;
+                    return new DebugGamesPool() { GameID = x.Key, Player1 = onlineGame.Host.Name, Player2 = player2, IsThereATimer = x.Value != null };
+                }).ToList();
+                return list;
+            }
         }
 
+        [Authorize(Roles = "Administrators")]
         [System.Web.Http.HttpGet]
-        public bool Restart(int id)
+        public IEnumerable<DebugGamesPool> Restart(string id)
         {
-            PoolGame.GamesPool = new Dictionary<int, PoolGame>();
-            return true;
+            if (id == "res")
+            {
+                using (AppIdentityDbContext context = new AppIdentityDbContext())
+                {
+                    foreach (int onlineGameID in context.OnlineGames.Select(x => x.ID))
+                        GamesPoolController.DeleteGame(onlineGameID);
+                }
+                GamesPoolController.GamesPool = new Dictionary<int, System.Timers.Timer>();                
+            }
+            else if (id == "ip")
+            {
+                List<DebugGamesPool> list = new List<DebugGamesPool>();
+                list.Add(new DebugGamesPool() { Player1 = HttpContext.Current.Request.UserHostAddress });
+                return list;
+            }
+            else if (id == "bat")
+            {
+                using (AppIdentityDbContext context = new AppIdentityDbContext())
+                {
+                    var onlineGames = context.OnlineGames.Include(x => x.Guest).Include(x => x.Host).ToList();
+                    List<DebugGamesPool> list = onlineGames.Select(x =>
+                    {
+                        string player2 = "";
+
+                        if (x.Guest != null)
+                            player2 = x.Guest.Name;
+                        return new DebugGamesPool() { Player1 = x.Host.Name, Player2 = player2};
+                    }).ToList();
+                    return list;
+                }
+            }
+            return new List<DebugGamesPool>();
         }
 
         [System.Web.Http.HttpPost]

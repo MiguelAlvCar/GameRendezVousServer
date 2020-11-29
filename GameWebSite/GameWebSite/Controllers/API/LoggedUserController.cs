@@ -54,8 +54,6 @@ namespace GameWebSite.Controllers
                                     || (x.Player2.Id == user.Id && x.Result < 0)).Count();
                 }
 
-                loginDTO.GamesPool =  new GamesPoolController().GetOnlineGamesPool(player.ID);
-
                 loginDTO.User = player;
                 return loginDTO;
             }

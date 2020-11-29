@@ -19,7 +19,7 @@ namespace GameWebSite.Controllers
 
         public ActionResult Index()
         {
-            return View(RoleManager.Roles);
+            return View(RoleManager.Roles.ToList());
         }
 
         public ActionResult Create()

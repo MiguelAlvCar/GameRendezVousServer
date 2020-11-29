@@ -10,13 +10,13 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/CommonModels.dll">
-      <publishTime>11/08/2020 08:55:29</publishTime>
+      <publishTime>11/29/2020 11:10:53</publishTime>
     </File>
     <File Include="bin/CommonModels.dll.config">
       <publishTime>08/21/2020 22:46:53</publishTime>
     </File>
     <File Include="bin/CommonModels.pdb">
-      <publishTime>11/08/2020 08:55:29</publishTime>
+      <publishTime>11/29/2020 11:10:53</publishTime>
     </File>
     <File Include="bin/de/System.Web.Helpers.resources.dll">
       <publishTime>11/28/2018 13:04:34</publishTime>
@@ -43,10 +43,10 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
       <publishTime>04/16/2020 20:38:56</publishTime>
     </File>
     <File Include="bin/GameWebSite.dll">
-      <publishTime>11/08/2020 12:14:49</publishTime>
+      <publishTime>11/29/2020 12:42:03</publishTime>
     </File>
     <File Include="bin/GameWebSite.pdb">
-      <publishTime>11/08/2020 12:14:49</publishTime>
+      <publishTime>11/29/2020 12:42:03</publishTime>
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
       <publishTime>11/25/2019 10:57:50</publishTime>
@@ -56,6 +56,12 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
     </File>
     <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
       <publishTime>11/25/2019 10:57:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Azure.KeyVault.dll">
+      <publishTime>07/05/2017 22:44:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Azure.KeyVault.WebKey.dll">
+      <publishTime>06/28/2017 19:11:28</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>07/08/2020 21:52:58</publishTime>
@@ -74,6 +80,12 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
     </File>
     <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
       <publishTime>11/12/2019 18:45:44</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Rest.ClientRuntime.Azure.dll">
+      <publishTime>05/22/2017 14:22:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Rest.ClientRuntime.dll">
+      <publishTime>05/22/2017 14:11:46</publishTime>
     </File>
     <File Include="bin/Microsoft.Web.Infrastructure.dll">
       <publishTime>07/25/2012 12:48:56</publishTime>
@@ -124,10 +136,10 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
       <publishTime>11/01/2018 19:57:04</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
-      <publishTime>12/05/2017 09:36:44</publishTime>
+      <publishTime>12/05/2017 01:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
-      <publishTime>12/05/2017 09:36:44</publishTime>
+      <publishTime>12/05/2017 01:36:44</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
       <publishTime>10/30/2018 11:39:38</publishTime>
@@ -136,85 +148,85 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
       <publishTime>11/01/2018 19:57:04</publishTime>
     </File>
     <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
-      <publishTime>11/05/2016 18:55:32</publishTime>
+      <publishTime>11/05/2016 11:55:32</publishTime>
     </File>
     <File Include="bin/roslyn/System.AppContext.dll">
-      <publishTime>11/05/2016 18:55:34</publishTime>
+      <publishTime>11/05/2016 11:55:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Collections.Immutable.dll">
-      <publishTime>05/16/2018 03:29:34</publishTime>
+      <publishTime>05/15/2018 20:29:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Console.dll">
-      <publishTime>11/05/2016 18:55:48</publishTime>
+      <publishTime>11/05/2016 11:55:48</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
-      <publishTime>11/05/2016 18:55:52</publishTime>
+      <publishTime>11/05/2016 11:55:52</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
-      <publishTime>11/05/2016 18:55:56</publishTime>
+      <publishTime>11/05/2016 11:55:56</publishTime>
     </File>
     <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
-      <publishTime>11/05/2016 18:55:52</publishTime>
+      <publishTime>11/05/2016 11:55:52</publishTime>
     </File>
     <File Include="bin/roslyn/System.Globalization.Calendars.dll">
-      <publishTime>11/05/2016 18:56:02</publishTime>
+      <publishTime>11/05/2016 11:56:02</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Compression.dll">
-      <publishTime>11/05/2016 18:56:08</publishTime>
+      <publishTime>11/05/2016 11:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
-      <publishTime>11/05/2016 18:56:04</publishTime>
+      <publishTime>11/05/2016 11:56:04</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.dll">
-      <publishTime>11/05/2016 18:56:08</publishTime>
+      <publishTime>11/05/2016 11:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
-      <publishTime>11/05/2016 18:56:08</publishTime>
+      <publishTime>11/05/2016 11:56:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.Net.Http.dll">
-      <publishTime>11/05/2016 18:56:30</publishTime>
+      <publishTime>11/05/2016 11:56:30</publishTime>
     </File>
     <File Include="bin/roslyn/System.Net.Sockets.dll">
-      <publishTime>11/05/2016 18:56:34</publishTime>
+      <publishTime>11/05/2016 11:56:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Reflection.Metadata.dll">
-      <publishTime>05/16/2018 03:29:44</publishTime>
+      <publishTime>05/15/2018 20:29:44</publishTime>
     </File>
     <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
-      <publishTime>11/05/2016 18:57:00</publishTime>
+      <publishTime>11/05/2016 11:57:00</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
-      <publishTime>11/05/2016 18:57:14</publishTime>
+      <publishTime>11/05/2016 11:57:14</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
-      <publishTime>11/05/2016 18:57:08</publishTime>
+      <publishTime>11/05/2016 11:57:08</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
-      <publishTime>11/05/2016 18:57:18</publishTime>
+      <publishTime>11/05/2016 11:57:18</publishTime>
     </File>
     <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
-      <publishTime>11/05/2016 18:57:18</publishTime>
+      <publishTime>11/05/2016 11:57:18</publishTime>
     </File>
     <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
-      <publishTime>11/05/2016 18:57:20</publishTime>
+      <publishTime>11/05/2016 11:57:20</publishTime>
     </File>
     <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
-      <publishTime>11/05/2016 18:57:24</publishTime>
+      <publishTime>11/05/2016 11:57:24</publishTime>
     </File>
     <File Include="bin/roslyn/System.ValueTuple.dll">
-      <publishTime>11/05/2016 18:57:30</publishTime>
+      <publishTime>11/05/2016 11:57:30</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
-      <publishTime>11/05/2016 18:57:36</publishTime>
+      <publishTime>11/05/2016 11:57:36</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
-      <publishTime>11/05/2016 18:57:34</publishTime>
+      <publishTime>11/05/2016 11:57:34</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XPath.dll">
-      <publishTime>11/05/2016 18:57:40</publishTime>
+      <publishTime>11/05/2016 11:57:40</publishTime>
     </File>
     <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
-      <publishTime>11/05/2016 18:57:34</publishTime>
+      <publishTime>11/05/2016 11:57:34</publishTime>
     </File>
     <File Include="bin/roslyn/vbc.exe">
       <publishTime>11/01/2018 13:23:08</publishTime>
@@ -652,7 +664,7 @@ indem Sie diese MSBuild-Datei bearbeiten. Weitere Informationen hierzu finden Si
       <publishTime>06/06/2020 21:58:51</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>11/07/2020 15:38:17</publishTime>
+      <publishTime>11/29/2020 11:17:02</publishTime>
     </File>
   </ItemGroup>
 </Project>
